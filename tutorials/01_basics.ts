@@ -10,3 +10,5 @@ let isPaidUser: boolean = true;
 
 // but, do not declare type, for to obvious types like these, especially if initiatized also
 // do not use 'any' in the type declaration
+
+export {};

@@ -21,5 +21,15 @@ function addNumbers(number1: number, number2: number): number {
   return number1 + number2;
 }
 
+const marvelHeros: string[] = ["iron man", "thor", "hulk", "captain america"];
+marvelHeros.map((hero: string): string => {
+  return `Hero names includes ${hero}`;
+});
+
+// use never type, for intentional crashes into the system
+function handleError(errorMessage: string): never {
+  throw new Error(errorMessage);
+}
+
 // even if not exporting, this tells compiler to treat it like module
 export {};
